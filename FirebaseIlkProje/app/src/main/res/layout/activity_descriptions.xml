@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF6F4"
+    tools:context=".DescriptionsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="290dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionsEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/descriptionsEditText"
+        android:layout_width="291dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="making a descriptions"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="228dp"
+        android:background="#009688"
+        android:text="SHARE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageAddButton"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionsEditText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imageAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="24dp"
+        android:background="#009688"
+        android:text="IMAGE ADD"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/shareButton"
+        app:layout_constraintEnd_toStartOf="@+id/shareButton"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

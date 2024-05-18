@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/recycler"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="username"
+        android:textColor="#0B6C62"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/image"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sharedDescriptionsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="shared Descriptions"
+        android:textAlignment="gravity"
+        android:textColor="#148379"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
